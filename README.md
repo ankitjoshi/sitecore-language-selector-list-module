@@ -8,14 +8,20 @@ For instance we work on any module where we need to select only few languages fr
 
 This modules helps to solve the same issue- and populates dynamically all language versions available for that site, it doesn’t populates all the languages from system languages instead take only those language versions which has been added as part of home page, this assumes that language versions that has been added to home page will be available to other inner pages as well.
 
-In case of multisite setup, this field has taken habitat site as a reference and expects rootPath value to be unique for all Sites added to the instance.
+If 3 languges has been added as pat of home page, from here if content authors want to show only couple of languages to language switcher module, they can do it via this “Language Selector List” field which helps to dynamically populates all the language versions available and select the one which is required.
+
+In case of multisite setup, this field has taken habitat site as a reference and expects rootPath value to be unique for all Sites added to the same instance.
 
 RELEASE NOTES
 This package installs the following to your Sitecore instance:- 
 
 •	\bin\ Sitecore.SharedSource.LanguageSelectorList.dll
+
 •	\ App_Config\Include\Foundation\ Sitecore.SharedSource.CustomFields.LanguageSelectorList.config
-And adds the following item to your Core DB to add the new custom field to your database: - /sitecore/system/Field types/Custom Field Types/Language Selector List 
+
+And adds the following item to your Core DB to add the new custom field to your database: - 
+/sitecore/system/Field types/Custom Field Types/Language Selector List 
+
 After installation, “Language Selector List” will be available as an option in the Sitecore Field Types (Custom Field Types) - while adding a field to any template. 
 The source of this field type should be set to “/sitecore/system/Languages”.
 
